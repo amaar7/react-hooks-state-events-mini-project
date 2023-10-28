@@ -8,7 +8,7 @@ test("displays a button for each category", () => {
   render(<CategoryFilter categories={CATEGORIES} />);
   for (const category of CATEGORIES) {
     expect(screen.queryByText(category)).toBeInTheDocument();
-  }
+  } 
 });
 
 test("clicking the category button adds a class of 'selected' to the button", () => {
